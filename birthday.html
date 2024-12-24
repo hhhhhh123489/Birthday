@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝宝20岁生日快乐 🎂</title>
+</head>
+<body>
+    <script>
+        // JavaScript Birthday Surprise Webpage
+        const body = document.body;
+        body.style.margin = '0';
+        body.style.fontFamily = 'Arial, sans-serif';
+        body.style.background = 'linear-gradient(to bottom, #ffafbd, #ffc3a0)';
+        body.style.textAlign = 'center';
+
+        // Header
+        const header = document.createElement('header');
+        header.style.background = '#ff6f61';
+        header.style.color = 'white';
+        header.style.padding = '20px';
+        header.style.fontSize = '2em';
+        header.textContent = '🎂 嘿嘿宝宝生日快乐！！！🎂';
+        body.appendChild(header);
+
+        // Content Section
+        const content = document.createElement('div');
+        content.style.margin = '50px';
+        body.appendChild(content);
+
+        // Message
+        const message = document.createElement('p');
+        message.style.fontSize = '1.5em';
+        message.style.marginBottom = '20px';
+        message.textContent = '请看我给你做的智障小网站 💖';
+        content.appendChild(message);
+
+        // Gift Button
+        const giftButton = document.createElement('button');
+        giftButton.style.background = '#ff6f61';
+        giftButton.style.color = 'white';
+        giftButton.style.border = 'none';
+        giftButton.style.padding = '10px 20px';
+        giftButton.style.fontSize = '1.2em';
+        giftButton.style.cursor = 'pointer';
+        giftButton.style.borderRadius = '5px';
+        giftButton.style.transition = 'background 0.3s ease';
+        giftButton.textContent = 'Open Your Gift 🎁';
+        content.appendChild(giftButton);
+
+        giftButton.addEventListener('mouseover', () => {
+            giftButton.style.background = '#d94e3f';
+        });
+
+        giftButton.addEventListener('mouseout', () => {
+            giftButton.style.background = '#ff6f61';
+        });
+
+        // Hidden Gift
+        const hiddenGift = document.createElement('div');
+        hiddenGift.style.display = 'none';
+        hiddenGift.style.marginTop = '30px';
+        content.appendChild(hiddenGift);
+
+        const giftText = document.createElement('p');
+        giftText.textContent = "惊喜，绝对是惊喜不是惊吓（点头）";
+        hiddenGift.appendChild(giftText);
+
+        const giftImage = document.createElement('img');
+        giftImage.src = 'https://media.discordapp.net/attachments/1236465270155907123/1320987374628376667/IMG_1334.png?ex=676b98dc&is=676a475c&hm=78517140f01fa5c478b96ff5245bcf3a1fbd1d53b76e302586170a9248329e5e&=&format=webp&quality=lossless&width=1044&height=823';
+        giftImage.alt = 'Surprise Image';
+        giftImage.style.maxWidth = '80%';
+        giftImage.style.borderRadius = '10px';
+        giftImage.style.boxShadow = '0 4px 8px rgba(0,0,0,0.2)';
+        hiddenGift.appendChild(giftImage);
+
+        const finalMessage = document.createElement('p');
+        finalMessage.style.textAlign = 'left';
+        finalMessage.style.margin = '20px auto';
+        finalMessage.style.maxWidth = '80%';
+        finalMessage.style.lineHeight = '1.5';
+        finalMessage.textContent = `
+草时间过得好快，我上次真情实感写小作文还是你18岁生日（）
+距离上次生日发生了好多事 但没事……被生活锤炼后的肉质会更劲道！
+
+今年怎么有种异地的感觉……平时很低能量有的时候要很久才回你果咩（）（）但我能量有了之后就都会去找你的（？）
+我也会一直在wwww所以有什么事还是可以随时找我吐槽！！
+
+20岁啊！恭喜你变成很帅的成年人了耶！（虽然成年人的世界真的很崩溃，但没事你还有我一起崩）
+不过，就像chat说的那样，把它当成一个新篇章的开启吧wwww有很多超酷的事情在等你呢！
+
+谢谢你一直以来都在我身边，无论是我emo的时候还是我笑吐的时候
+也谢谢你陪我骂生活中的那堆傻呗。虽然今年有距离，但你还是陪我走过了好多特别的瞬间🥺（妈呀我好煽情）
+
+恭喜你20岁！！祝你每天都开心快乐，钱包鼓鼓，吃不胖，睡到自然醒 以及希望你许下的所有心愿都一个接一个地实现wwww
+
+宝宝我爱你！！！不管未来怎么样，我永远会在这里！`;
+        hiddenGift.appendChild(finalMessage);
+
+        // Reveal Gift Functionality
+        giftButton.addEventListener('click', () => {
+            hiddenGift.style.display = 'block';
+            giftButton.style.display = 'none';
+        });
+
+        // Footer
+        const footer = document.createElement('footer');
+        footer.style.marginTop = '50px';
+        footer.style.fontSize = '0.9em';
+        footer.style.color = '#555';
+        footer.textContent = 'Made with ❤️ by Your Best Friend（笑死我了好土）';
+        body.appendChild(footer);
+    </script>
+</body>
+</html>
